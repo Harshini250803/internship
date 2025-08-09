@@ -1,0 +1,403 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #f44336;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #f44336;
+}
+
+/* Hero Section with Background Image */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  min-height: 100vh;
+  background: url('https://img.freepik.com/premium-photo/laptop-sits-wooden-table-with-glass-wine_1124573-33014.jpg') no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.text-section,
+.image-section {
+  position: relative;
+  z-index: 1;
+}
+
+.text-section h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.text-section h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.text-section h2 span {
+  color: #f44336;
+}
+
+.text-section p {
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background: #f44336;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e53935;
+}
+
+.image-section img {
+  max-height: 70vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-section {
+    margin-top: 30px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.contact-section {
+  position: relative;
+  background: url('https://img.freepik.com/premium-photo/laptop-sits-wooden-table-with-glass-wine_1124573-33014.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.contact-section .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#contact-form .btn {
+  background: #f44336;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form .btn:hover {
+  background: #e53935;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 30px 20px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+.about-section {
+  padding: 100px 10%;
+  min-height: 100vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f44336;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+}
+
+.projects-section {
+  padding: 100px 10%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f44336;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+   width: 350px;      
+  height: auto;      
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  background: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background: #e53935;
+}
+
+.resume-section {
+  padding: 100px 10%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f44336;
+}
+
+.resume-section .btn {
+  background: #f44336;
+  color: #fff;
+  padding: 12px 25px;
+  margin: 20px 0;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.resume-section .btn:hover {
+  background: #e53935;
+}
+
+.resume-content {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: #ddd;
+}
+
+.resume-content p {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 60px 20px;
+  }
+
+  .resume-content {
+    font-size: 1rem;
+  }
+}
+
+.resume-description {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #ccc;
+}

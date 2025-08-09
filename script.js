@@ -1,0 +1,15 @@
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+const form = document.getElementById('contact-form');
+if(form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thanks for your message!');
+    form.reset();
+  });
+}
