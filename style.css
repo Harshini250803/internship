@@ -399,3 +399,27 @@ footer {
   text-align: center;
   color: #ccc;
 }
+.section-header, .section-footer {
+  background: rgba(17, 17, 17, 0.9);
+  padding: 10px 5%;
+  text-align: center;
+}
+
+.section-footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section-footer a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.section-footer a:hover {
+  color: #f44336;
+}
+
