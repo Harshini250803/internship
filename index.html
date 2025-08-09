@@ -13,11 +13,11 @@
     <nav class="navbar">
       <div class="logo">Portfo<span>lio.</span></div>
       <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,15 +30,14 @@
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
-  <section id="about" class="full-page">
-    <div class="section-container">
+  <section id="about" class="about-section">
+    <div class="about-container">
       <h2>About Me</h2>
       <p>I'm a passionate front-end developer with hands-on experience in JavaScript, React, and Python, and a growing interest in MongoDB and modern web technologies.</p>
       <p>I love crafting clean, responsive web applications that blend elegant design with efficient performance. Always curious, always learning.</p>
     </div>
   </section>
-  <section id="projects" class="full-page">
-    <div class="section-container">
+  <section id="projects" class="projects-section">
   <h2>My Project</h2>
   <div class="project-grid">
     <div class="project-card">
@@ -48,10 +47,8 @@
       <a href="http://localhost/greenify" target="_blank" class="btn">View Project</a>
     </div>
   </div>
- </div>   
 </section>
- <section id="resume" class="full-page">
-    <div class="section-container">
+  <section id="resume" class="resume-section">
     <h2>Resume</h2>
     <a href="resume.pdf" target="_blank" download="Harshini_Resume.pdf" class="btn">Download Resume (PDF)</a>
     <p class="resume-description">
@@ -59,8 +56,25 @@
       My resume includes academic achievements, technical skills, internship experiences, and personal projects that reflect my dedication and adaptability. 
       Download the PDF to explore my complete profile.
     </p>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="overlay"></div>
+    <div class="contact-content">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </section>
+  <footer>
+    <p>&copy; 2025 Harshini P. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
    <section id="contact" class="full-page">
     <div class="section-container">
     <div class="overlay"></div>
