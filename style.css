@@ -116,6 +116,27 @@ body {
   border-radius: 10px;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-section {
+    margin-top: 30px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 
 footer {
   text-align: center;
