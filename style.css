@@ -399,8 +399,29 @@ footer {
   text-align: center;
   color: #ccc;
 }
-
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.85); 
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+  backdrop-filter: blur(5px); 
+}
+.hero {
+  padding-top: 120px; /* adjust based on navbar height */
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fd84b7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
 
 
 
